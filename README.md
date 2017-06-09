@@ -58,7 +58,7 @@ familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the OMNIROM trees, use a command like this:
 
-    repo init -u git://github.com/omnirom/android.git -b android-6.0
+    repo init -u git://github.com/adeii/omnirom.git -b android-6.0
 
 Add local manifest for Huawei y300/g330/g510:
 
