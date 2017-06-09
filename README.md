@@ -60,13 +60,20 @@ To initialize your local repository using the OMNIROM trees, use a command like 
 
     repo init -u git://github.com/omnirom/android.git -b android-6.0
 
+Add local manifest for Huawei y300/g330/g510:
+
+     mkdir .repo/local_manifests
+     cd .repo/local_manifests
+     wget https://raw.githubusercontent.com/CM13-Y300/local_manifest/master/cm_huawei.xml
+     cd ../..
+
 Then to sync up:
 
-    repo sync
+    repo sync --force-sync --no-clone-bundle --no-tags
 
-Then to build:
+Then to build u8825, u8833 or u8951:
 
-     cd <source-dir>; . build/envsetup.sh; brunch <device_name>
+     . build/envsetup.sh; breakfast u8951; brunch u8951
 
 
 If you need more information or a more detailed guide, click [here to see our wiki.](http://docs.omnirom.org)
